@@ -1,1 +1,56 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.wrapper {
+  height: 100vh;
+  width: auto;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card {
+  display: grid;
+  grid-column: auto;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.values {
+  align-self: center;
+  font-family: system-ui;
+  font-size: 140px;
+}
+
+.values-red {
+  align-self: center;
+  font-family: system-ui;
+  font-size: 140px;
+  color: red;
+}
+
+.icons {
+  font-size: 80px;
+  justify-self: flex-start;
+  padding-left: 20px;
+}
+
+.red {
+  font-size: 80px;
+  justify-self: flex-start;
+  padding-left: 20px;
+  color: red;
+}
+
+.main-card :nth-child(3) {
+  font-size: 80px;
+  justify-self: flex-end;
+  padding-right: 20px;
+  transform: rotate(180deg);
+}
