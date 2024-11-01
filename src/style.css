@@ -51,17 +51,10 @@
   color: red;
 }
 
-.icons {
+.figuras {
   font-size: 80px;
   justify-self: flex-start;
   padding-left: 20px;
-}
-
-.previous-card :nth-child(3) {
-  font-size: 80px;
-  justify-self: flex-end;
-  padding-right: 20px;
-  transform: rotate(180deg);
 }
 
 .red {
@@ -71,6 +64,12 @@
   color: red;
 }
 
+.previous-card :nth-child(3) {
+  font-size: 80px;
+  justify-self: flex-end;
+  padding-right: 20px;
+  transform: rotate(180deg);
+}
 .main-card :nth-child(3) {
   font-size: 80px;
   justify-self: flex-end;
@@ -78,13 +77,38 @@
   transform: rotate(180deg);
 }
 
+.UI {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 45px;
+}
 .button {
   background-color: red;
-  margin: 2rem;
   padding: 1rem;
   width: 200px;
-  border-radius: 30px;
+  border-radius: 15px;
   font-family: system-ui;
   font-weight: 800;
-  color: #dcdcdc;
+  color: #ffffff;
+  border-style: none;
+}
+
+.button-restart {
+  background-color: rgb(255, 240, 75);
+  padding: 1rem;
+  width: 200px;
+  border-radius: 15px;
+  font-family: system-ui;
+  font-weight: 800;
+  color: #170230;
+  border-style: none;
+}
+
+.joker {
+  background-image: url(https://tecolotito.elsiglodetorreon.com.mx/i/2019/05/1177566.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: inherit;
+  border-radius: inherit;
 }

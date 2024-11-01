@@ -15,13 +15,22 @@
       <div class="wrapper">
         <div class="previous-card" id="previous-card"></div>
         <div class="main-card" id="mainCard">
-          <div class="icons">♣</div>
+          <div class="figuras">♣</div>
           <div class="values">A</div>
-          <div class="icons">♣</div>
+          <div class="figuras">♣</div>
         </div>
-        <button class="button" onclick="button.onclick()" id="buttonToGenerate">
-          Get a card
-        </button>
+        <div class="UI">
+          <button
+            class="button"
+            onclick="button.onclick()"
+            id="buttonToGenerate"
+          >
+            Get a card
+          </button>
+          <button class="button-restart" onclick="resetDeck()" id="restart">
+            Restart
+          </button>
+        </div>
       </div>
     </div>
   </body>
