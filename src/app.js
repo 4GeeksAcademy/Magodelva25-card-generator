@@ -7,7 +7,9 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 import { read } from "@popperjs/core";
 
-window.onload = function() {
+const button = document.getElementById("buttonToGenerate");
+
+button.onclick = function() {
   //Asiganmos una variable a cada glifo
   const spade = "♠";
   const trebol = "♣";
@@ -31,12 +33,18 @@ window.onload = function() {
   if (randomizedFiguresValue === hearts) cardValue = "values-red";
   if (randomizedFiguresValue === diamond) cardValue = "values-red";
 
+  // Guardar el estado anterior
+
+  const mainCardContent = document.querySelector("#mainCard").innerHTML;
+  document.querySelector("#previous-card").innerHTML = mainCardContent;
+
   //Renderizamos el contenido en el html
+
   const renderElements = (document.querySelector(
     "#mainCard"
   ).innerHTML = `<div class=${iconStyle}>${randomizedFiguresValue}</div>
-       <div class=${cardValue}>${randomizedNumberValue}</div>
-       <div class=${iconStyle}>${[randomizedFiguresValue]}</div>`);
+         <div class=${cardValue}>${randomizedNumberValue}</div>
+         <div class=${iconStyle}>${[randomizedFiguresValue]}</div>`);
 
   return renderElements;
 };
